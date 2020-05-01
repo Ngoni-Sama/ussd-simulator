@@ -251,7 +251,7 @@
 		<img src="pixel3xl.webp" id="android-img" class="phone-img" />
 		<div id="screen">
 			<div id="ussd-box">
-				<div id="menu-text">Dial Short Code</div>
+				<div id="menu-text">welcome to Openparly selfcare</div>
 				<input id="menu-entry" name="menu-entry"></input>
 				<p id="inline-error"></p>
 				<div id="buttons">
@@ -295,7 +295,7 @@
 	const root_url = "https://stage.usehover.com";
 	let channels = [], menu = null, child_menus = [], place = 0, vars = {}, mode = "android";
 
-	function load(url, callback) { $.ajax({type: "GET", url: url, success: callback, error: function() { onError("Network error"); } }); }
+	function load(url, callback) { $.ajax({type: "GET", url: url, success: callback, error: function() { onError("Demo USSD Api"); } }); }
 	function loadChannel() { load(root_url + "/api/channels/", onLoadChannel); }
 	function loadMenu(id) {
 		load(root_url + "/api/menus/" + id, onLoadMenu);  
